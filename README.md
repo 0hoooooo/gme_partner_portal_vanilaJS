@@ -1,0 +1,1 @@
+# gme_partner_portal_vanilaJS
