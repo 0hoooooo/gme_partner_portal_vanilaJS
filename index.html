@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <title>GME Korea Agent Portal</title>
+    <script src="./include.js" defer></script>
+  </head>
+  <body>
+    <!-- <header data-include="./src/component/header.html"></header> -->
+    <div class="main_wrapper">
+      <nav class="header_wrapper">
+        <div class="header_container">
+          <div class="menuui_left">
+            <div class="navbar_header">
+              <a
+                class="navbar_brand"
+                href="index.html"
+                onclick="window.location.reload()"
+                ><img class="brand_logo" src="src/images/logo.png"
+              /></a>
+            </div>
+            <ul class="menu_ui">
+              <ul class="menu_nav_ui">
+                <li class="dropDown">
+                  <a class="dropDownToggle">
+                    Fund
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropDownMenu">
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/BalanceManagement/List.aspx"
+                      >
+                        Balance History
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/DepositHistory/List.aspx"
+                      >
+                        Deposit History
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/ExchangeFund/GridList.aspx"
+                      >
+                        Exchange Fund History
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/ExchangeFund/List.aspx"
+                      >
+                        Exchange Fund
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/VASettlement/Report.aspx"
+                      >
+                        Statement
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu_nav_ui">
+                <li class="dropDown">
+                  <a class="dropDownToggle">
+                    Transaction<span class="caret"></span>
+                  </a>
+                  <ul class="dropDownMenu">
+                    <li>
+                      <a class="gme_anchor" href="/Pages/CSVFileB2B/List.aspx">
+                        Batch Upload
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/TransactionDetail/List.aspx"
+                      >
+                        Transaction Detail
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu_nav_ui">
+                <li class="dropDown">
+                  <a class="dropDownToggle">
+                    Virtual Account<span class="caret"></span>
+                  </a>
+                  <ul class="dropDownMenu">
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/CustomerVirtualAccount/List.aspx"
+                      >
+                        Management
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/VACollectionDetail/List.aspx"
+                      >
+                        Collection
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="gme_anchor"
+                        href="/Pages/VASettlement/List.aspx"
+                      >
+                        Settlement
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <ul class="menuui_right">
+            <li class="right_dropDown">
+              <a href="#" data-toggle="dropdown" class="right_dropDownToggle">
+                <span id="agentName" class="agentName"></span>
+                <b class="caret"></b>
+              </a>
+              <ul class="right_dropDownMenu">
+                <li>
+                  <a class="gme_anchor" href="src/pages/mypage/profile.html">
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="gme_anchor"
+                    href="src/pages/auth/login.html"
+                    onclick="logOut()"
+                  >
+                    Sign Out
+                  </a>
+                </li>
+                <li>
+                  <a class="gme_anchor" href="Changepassword.aspx">
+                    Change Password
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main_body">
+        <div class="home_wrapper">
+          <div class="home_content">
+            <div class="top_wrapper">
+              <div class="available">Available Balance</div>
+            </div>
+            <div class="bottom_wrapper">
+              <div class="krw_balance_wrapper">
+                <div class="krw_balance_content">
+                  <span style="font-size: 20px">
+                    <img
+                      style="
+                        border-radius: 20px;
+                        height: 60px;
+                        box-shadow: 0 0 50px 20px rgba(50, 50, 50, 0.1);
+                      "
+                      className="wpml-ls-flag"
+                      src="/src/images/krw.png"
+                      alt=""
+                    />
+                    <h4>KRW</h4>
+                  </span>
+                  <div class="krw_balance">
+                    <span style="text-align: center; font-size: 30px">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="usa_balance_wrapper">
+                <div class="usa_balance_content">
+                  <span style="font-size: 20px">
+                    <img
+                      style="
+                        border-radius: 20px;
+                        height: 60px;
+                        width: 90px;
+                        box-shadow: 0 0 50px 20px rgba(50, 50, 50, 0.1);
+                      "
+                      className="wpml-ls-flag"
+                      src="/src/images/usd.png"
+                      alt=""
+                    />
+                    <h4>USA</h4>
+                    <div class="usa_balance">
+                      <span style="text-align: center; font-size: 30px">0</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .main_wrapper {
+    min-width: 1300px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+  }
+  .home_wrapper {
+    display: flex;
+    flex: 1;
+    margin: 0px auto;
+    padding: 50px;
+  }
+  .home_content {
+    display: flex;
+    flex-direction: column;
+    border-color: #bce8f1;
+    box-shadow: 0 0 50px 20px rgba(74, 74, 74, 0.1);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: white;
+  }
+  @media (min-width: 992px) {
+    .top_wrapper {
+      float: left;
+      width: 100%;
+    }
+  }
+  .available {
+    font-size: 70px;
+    margin: auto;
+    clear: both;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-color: #bce8f1;
+    padding-top: 20px;
+    border: 1px solid transparent;
+  }
+  .bottom_wrapper {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+  }
+  @media (min-width: 992px) {
+    .bottom_wrapper {
+      float: left;
+      width: 100%;
+    }
+  }
+  .krw_balance_wrapper {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (min-width: 992px) {
+    .krw_balance_wrapper {
+      float: left;
+      width: 50%;
+    }
+  }
+  .krw_balance_content {
+    height: 200px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .usa_balance_wrapper {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (min-width: 992px) {
+    .usa_balance_wrapper {
+      float: left;
+      width: 50%;
+    }
+  }
+  .usa_balance_content {
+    height: 200px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .krw_balance {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .usa_balance {
+    text-align: center;
+    padding-top: 20px;
+  }
+</style>

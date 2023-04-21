@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GME Korea Agent Portal</title>
+    <script src="../../include.js" defer></script>
+  </head>
+  <body>
+    <nav class="header_wrapper">
+      <div class="header_container">
+        <div class="menuui_left">
+          <div class="navbar_header">
+            <a class="navbar_brand" onclick="window.location.reload()"
+              ><img class="brand_logo" src="src/images/logo.png"
+            /></a>
+          </div>
+          <ul class="menu_ui">
+            <ul class="menu_nav_ui">
+              <li class="dropDown">
+                <a class="dropDownToggle">
+                  Fund
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropDownMenu">
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/BalanceManagement/List.aspx"
+                    >
+                      Balance History
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/DepositHistory/List.aspx"
+                    >
+                      Deposit History
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/ExchangeFund/GridList.aspx"
+                    >
+                      Exchange Fund History
+                    </a>
+                  </li>
+                  <li>
+                    <a class="gme_anchor" href="/Pages/ExchangeFund/List.aspx">
+                      Exchange Fund
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/VASettlement/Report.aspx"
+                    >
+                      Statement
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu_nav_ui">
+              <li class="dropDown">
+                <a class="dropDownToggle">
+                  Transaction<span class="caret"></span>
+                </a>
+                <ul class="dropDownMenu">
+                  <li>
+                    <a class="gme_anchor" href="/Pages/CSVFileB2B/List.aspx">
+                      Batch Upload
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/TransactionDetail/List.aspx"
+                    >
+                      Transaction Detail
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu_nav_ui">
+              <li class="dropDown">
+                <a class="dropDownToggle">
+                  Virtual Account<span class="caret"></span>
+                </a>
+                <ul class="dropDownMenu">
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/CustomerVirtualAccount/List.aspx"
+                    >
+                      Management
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="gme_anchor"
+                      href="/Pages/VACollectionDetail/List.aspx"
+                    >
+                      Collection
+                    </a>
+                  </li>
+                  <li>
+                    <a class="gme_anchor" href="/Pages/VASettlement/List.aspx">
+                      Settlement
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <ul class="menuui_right">
+          <li class="right_dropDown">
+            <a href="#" data-toggle="dropdown" class="right_dropDownToggle">
+              <span id="agentName" class="agentName"></span>
+              <b class="caret"></b>
+            </a>
+            <ul class="right_dropDownMenu">
+              <li>
+                <a class="gme_anchor" onclick="profile()"> Profile </a>
+              </li>
+              <li>
+                <a class="gme_anchor" onclick="logOut()"> Sign Out </a>
+              </li>
+              <li>
+                <a class="gme_anchor" href="Changepassword.aspx">
+                  Change Password
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
+
+<style>
+  .header_wrapper {
+    background-color: #d2000b;
+    border-color: transparent;
+    top: 0;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    position: sticky;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    justify-content: space-between;
+  }
+  .header_container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menuui_left {
+    display: flex;
+  }
+  @media (min-width: 768px) {
+    .navbar_header {
+      float: left;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  .navbar_header {
+    display: flex;
+  }
+  .navbar_brand {
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 20px;
+    line-height: 10px;
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    .navbar_brand {
+      margin-left: 5px;
+    }
+  }
+  .brand_logo {
+    display: flex;
+    object-fit: cover;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .menu_ui {
+    display: flex;
+    padding-left: 100px;
+    list-style: none;
+  }
+  @media (min-width: 768px) {
+    .menu_ui {
+      float: left;
+      margin: 0;
+    }
+  }
+  .menu_nav_ui {
+    cursor: pointer;
+    padding-left: 0;
+    list-style: none;
+  }
+  .dropDown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .dropDown {
+      float: left;
+    }
+  }
+
+  .dropDown:hover .dropDownMenu {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 200px;
+    padding: 5px 0;
+    margin: 1px 0 0;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+    line-height: 30px;
+    background-color: #d30000;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    transition: height 0.3s ease-in-out;
+    transition-delay: 0.5s;
+  }
+  .dropDownMenu {
+    display: none;
+  }
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    vertical-align: middle;
+    border-top: 10px dashed;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+  .gme_anchor {
+    display: block;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    color: #ffffff !important;
+    background-color: #d2000b;
+    text-decoration: none;
+    text-underline-offset: 5px;
+  }
+  .gme_anchor:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+  }
+  .dropDownToggle {
+    color: #ffffff;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    .dropDownToggle {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  .menuui_right {
+    cursor: pointer;
+    padding-left: 0;
+    list-style: none;
+  }
+  @media (min-width: 768px) {
+    .menuui_right {
+      float: right !important;
+      margin-right: -15px;
+    }
+  }
+  .right_dropDown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  @media screen and (min-width: 768px) {
+    .right_dropDown {
+      float: left;
+    }
+  }
+  .agentName {
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff !important;
+    background-color: #d2000b;
+    text-decoration: none;
+    text-underline-offset: 5px;
+  }
+  .right_dropDown:hover .right_dropDownMenu {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 100px;
+    padding: 5px 0;
+    margin: 1px 0 0;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+    line-height: 40px;
+    background-color: #d30000;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    transition: height 0.3s ease-in-out;
+    transition-delay: 0.5s;
+  }
+  .right_dropDownMenu {
+    display: none;
+  }
+  .right_dropDownToggle {
+    color: #ffffff;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  @media (min-width: 768px) {
+    .right_dropDownToggle {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+</style>

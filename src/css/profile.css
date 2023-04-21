@@ -1,0 +1,6 @@
+.profile_wrapper {
+  display: flex;
+  flex: 1;
+  margin: 0px auto;
+  padding: 50px;
+}

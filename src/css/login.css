@@ -1,0 +1,123 @@
+.login_header {
+  position: relative;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  display: block;
+  z-index: 1;
+  color: #fff;
+}
+@media (min-width: 1400px) {
+  .login_header {
+    padding-top: 150px;
+  }
+}
+.login_wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px) {
+  .login_wrapper {
+    max-width: 1140px;
+  }
+}
+.login_body {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.login_column {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 992px) {
+  .login_column {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.login_content {
+  padding-top: 20px;
+  padding-bottom: 1px;
+  margin: auto;
+  color: #4a4a4a;
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 42px 18px rgba(74, 74, 74, 0.1);
+}
+.login_company {
+  margin-left: 20%;
+  font-size: 20px;
+  color: #dc3545;
+}
+.form_wrapper {
+  padding: 30px 30px;
+}
+.login_button {
+  border-radius: 10px;
+  width: 80%;
+  margin: 25px;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ef343b;
+  background-color: #fff;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+}
+.login_button:hover {
+  color: #fff;
+  background-color: #ef343b;
+}
+.inputId_wrapper {
+  border-radius: 5px;
+  padding: 10px 10px;
+  position: relative;
+  line-height: 1;
+  box-sizing: border-box;
+}
+.user_input {
+  margin: 0;
+  display: inline-block;
+  max-width: 100%;
+  color: #4a4a4a;
+  font-size: 18px;
+}
+.username {
+  width: 90%;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 15px !important;
+  color: #ed1c24;
+  margin: 10px 0 0;
+  line-height: 2;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  height: 40px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.login_input_checkbox {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 1.5rem; */
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
