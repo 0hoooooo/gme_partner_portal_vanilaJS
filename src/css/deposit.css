@@ -1,0 +1,118 @@
+.deposit_wrapper {
+  position: relative;
+  background-position: center;
+  display: flex;
+  z-index: 1;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+}
+.deposit_content {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.deposit_head_wrapper {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.deposit_head {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  background-color: red;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deposit_title {
+  color: #fff;
+  font-size: 30px;
+}
+.deposit_body_wrapper {
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deposit_column_wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 30px;
+}
+
+@media (min-width: 992px) {
+  .deposit_column {
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+  }
+}
+.filter {
+  width: 100%;
+  border: 2px solid #ccc;
+  font-size: 15px !important;
+  padding: 10px;
+  /* margin: 10px 0 0; */
+  line-height: 2;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  height: 50px;
+}
+.date {
+  width: 80%;
+  border: 2px solid #ccc;
+  font-size: 15px !important;
+  padding: 10px;
+  margin-top: 10px;
+  line-height: 2;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  height: 40px;
+  /* transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; */
+}
+
+.deposit_row_box_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.deposit_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+.deposit_button {
+  border-radius: 10px;
+  width: 50%;
+  height: 20%;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ef343b;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+}
+.deposit_row_wrapper {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+}

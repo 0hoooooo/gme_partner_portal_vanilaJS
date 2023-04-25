@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="../../../src/css/header.css" />
+    <link rel="stylesheet" href="../../../src/css/style.css" />
+    <link rel="stylesheet" href="../../../src/css/deposit.css" />
     <title>GME Korea Agent Portal</title>
-    <script src="./include.js" defer></script>
+    <script src="../../../include.js" defer></script>
   </head>
   <body>
-    <!-- <header data-include="./src/component/header.html"></header> -->
     <div class="main_wrapper">
       <nav class="header_wrapper">
         <div class="header_container">
@@ -18,9 +18,9 @@
             <div class="navbar_header">
               <a
                 class="navbar_brand"
-                href="index.html"
+                href="../../../index.html"
                 onclick="window.location.reload()"
-                ><img class="brand_logo" src="src/images/logo.png"
+                ><img class="brand_logo" src="../../../src/images/logo.png"
               /></a>
             </div>
             <ul class="menu_ui">
@@ -32,18 +32,12 @@
                   </a>
                   <ul class="dropDownMenu">
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="./src/pages/fund/balance.html"
-                      >
+                      <a class="gme_anchor" href="../fund/balance.html">
                         Balance History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="./src/pages/fund/deposit.html"
-                      >
+                      <a class="gme_anchor" href="../fund/deposit.html">
                         Deposit History
                       </a>
                     </li>
@@ -139,21 +133,15 @@
               </a>
               <ul class="right_dropDownMenu">
                 <li>
-                  <a class="gme_anchor" href="src/pages/mypage/profile.html">
+                  <a class="gme_anchor" href="../mypage/profile.html">
                     Profile
                   </a>
                 </li>
                 <li>
-                  <a
-                    class="gme_anchor"
-                    href="src/pages/auth/login.html"
-                    onclick="logOut()"
-                  >
-                    Sign Out
-                  </a>
+                  <a class="gme_anchor" href="../auth/login.html"> Sign Out </a>
                 </li>
                 <li>
-                  <a class="gme_anchor" href="src/pages/mypage/chagepw.html">
+                  <a class="gme_anchor" href="../mypage/chagepw.html">
                     Change Password
                   </a>
                 </li>
@@ -162,53 +150,76 @@
           </ul>
         </div>
       </nav>
-      <div class="main_body">
-        <div class="home_wrapper">
-          <div class="home_content">
-            <div class="top_wrapper">
-              <div class="available">Available Balance</div>
+
+      <div class="deposit_wrapper">
+        <div class="deposit_content">
+          <div class="deposit_head_wrapper">
+            <div class="deposit_head">
+              <span class="deposit_title">Deposit History</span>
             </div>
-            <div class="bottom_wrapper">
-              <div class="krw_balance_wrapper">
-                <div class="krw_balance_content">
-                  <span style="font-size: 20px">
-                    <img
-                      style="
-                        border-radius: 20px;
-                        height: 60px;
-                        box-shadow: 0 0 50px 20px rgba(50, 50, 50, 0.1);
-                      "
-                      className="wpml-ls-flag"
-                      src="/src/images/krw.png"
-                      alt=""
+          </div>
+
+          <div class="deposit_body_wrapper">
+            <div class="deposit_row_box_wrapper">
+              <div class="deposit_column_wrapper">
+                <div class="deposit_column">
+                  <select class="filter">
+                    <option value="hi" selected="selected">
+                      <text>Filter Results</text>
+                    </option>
+                    <option value="hi" selected="selected">
+                      <text>Filter Results</text>
+                    </option>
+                  </select>
+                </div>
+
+                <div class="deposit_row_box_wrapper">
+                  <div class="deposit_column">
+                    <span>From Date</span>
+                    <input
+                      class="date"
+                      id="id"
+                      type="date"
+                      placeholder="GUID"
+                      onchange="changeValue()"
                     />
-                    <h4>KRW</h4>
-                  </span>
-                  <div class="krw_balance">
-                    <span style="text-align: center; font-size: 30px">0</span>
+                  </div>
+
+                  <div class="deposit_column">
+                    <span>To Date</span>
+                    <input
+                      class="date"
+                      id="id"
+                      type="date"
+                      placeholder="GUID"
+                      onchange="changeValue()"
+                    />
                   </div>
                 </div>
               </div>
-              <div class="usa_balance_wrapper">
-                <div class="usa_balance_content">
-                  <span style="font-size: 20px">
-                    <img
-                      style="
-                        border-radius: 20px;
-                        height: 60px;
-                        width: 90px;
-                        box-shadow: 0 0 50px 20px rgba(50, 50, 50, 0.1);
-                      "
-                      className="wpml-ls-flag"
-                      src="/src/images/usd.png"
-                      alt=""
-                    />
-                    <h4>USA</h4>
-                    <div class="usa_balance">
-                      <span style="text-align: center; font-size: 30px">0</span>
-                    </div>
-                  </span>
-                </div>
+
+              <div class="deposit_button_wrapper">
+                <button
+                  type="submit"
+                  class="deposit_button"
+                  onclick="goLogin()"
+                >
+                  FILTER
+                </button>
+                <button
+                  type="submit"
+                  class="deposit_button"
+                  onclick="goLogin()"
+                >
+                  CLEAR
+                </button>
+              </div>
+            </div>
+
+            <div class="deposit_row_wrapper">
+              <div class="deposit_column">
+                <text>Result : 0 </text>
+                <text>Records </text>
               </div>
             </div>
           </div>
@@ -217,107 +228,3 @@
     </div>
   </body>
 </html>
-<style>
-  .main_wrapper {
-    min-width: 1300px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .main_body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    width: 100%;
-  }
-  .home_wrapper {
-    display: flex;
-    flex: 1;
-    margin: 0px auto;
-    padding: 50px;
-  }
-  .home_content {
-    display: flex;
-    flex-direction: column;
-    border-color: #bce8f1;
-    box-shadow: 0 0 50px 20px rgba(74, 74, 74, 0.1);
-    border-radius: 10px;
-    padding: 50px;
-    background-color: white;
-  }
-  @media (min-width: 992px) {
-    .top_wrapper {
-      float: left;
-      width: 100%;
-    }
-  }
-  .available {
-    font-size: 70px;
-    margin: auto;
-    clear: both;
-    text-align: center;
-    border-radius: 25px;
-    margin-top: 10px;
-    font-weight: bold;
-    border-color: #bce8f1;
-    padding-top: 20px;
-    border: 1px solid transparent;
-  }
-  .bottom_wrapper {
-    display: flex;
-    padding-top: 50px;
-    flex-direction: row;
-  }
-  @media (min-width: 992px) {
-    .bottom_wrapper {
-      float: left;
-      width: 100%;
-    }
-  }
-  .krw_balance_wrapper {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  @media (min-width: 992px) {
-    .krw_balance_wrapper {
-      float: left;
-      width: 50%;
-    }
-  }
-  .krw_balance_content {
-    height: 200px;
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .usa_balance_wrapper {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  @media (min-width: 992px) {
-    .usa_balance_wrapper {
-      float: left;
-      width: 50%;
-    }
-  }
-  .usa_balance_content {
-    height: 200px;
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .krw_balance {
-    text-align: center;
-    padding-top: 20px;
-  }
-  .usa_balance {
-    text-align: center;
-    padding-top: 20px;
-  }
-</style>
