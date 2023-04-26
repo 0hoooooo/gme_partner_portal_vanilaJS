@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../src/css/header.css" />
     <link rel="stylesheet" href="../../../src/css/style.css" />
-    <link rel="stylesheet" href="../../../src/css/chagepw.css" />
+    <link rel="stylesheet" href="../../../src/css/eflist.css" />
     <title>GME Korea Agent Portal</title>
     <script src="../../../include.js" defer></script>
   </head>
@@ -32,42 +32,27 @@
                   </a>
                   <ul class="dropDownMenu">
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/balance.html"
-                      >
+                      <a class="gme_anchor" href="../fund/balance.html">
                         Balance History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/deposit.html"
-                      >
+                      <a class="gme_anchor" href="../fund/deposit.html">
                         Deposit History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/eflist.html"
-                      >
+                      <a class="gme_anchor" href="../fund/eflist.html">
                         Exchange Fund History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/excahnge.html"
-                      >
+                      <a class="gme_anchor" href="../fund/excahnge.html">
                         Exchange Fund
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/statement.html"
-                      >
+                      <a class="gme_anchor" href="../fund/statement.html">
                         Statement
                       </a>
                     </li>
@@ -139,7 +124,9 @@
               </a>
               <ul class="right_dropDownMenu">
                 <li>
-                  <a class="gme_anchor" href="../mypage/profile.html"> Profile </a>
+                  <a class="gme_anchor" href="../mypage/profile.html">
+                    Profile
+                  </a>
                 </li>
                 <li>
                   <a class="gme_anchor" href="../auth/login.html"> Sign Out </a>
@@ -154,63 +141,93 @@
           </ul>
         </div>
       </nav>
-      <div class="chagepw_wrapper">
-        <div class="chagepw_content">
-          <div class="changepw_head_wrapper">
-            <div class="changepw_head">
-              <span class="changepw_title">Change Password</span>
+
+      <div class="fer_wrapper">
+        <div class="fer_content">
+          <div class="fer_head_wrapper">
+            <div class="fer_head">
+              <span class="fer_title">Fund Exchange Request</span>
             </div>
           </div>
 
-          <div class="changepw_body_wrapper">
-
-            <div class="changepw_column_wrapper">
-
-              <div class="changepw_rows_wrapper">
-
-                  <div class="changepw_column">
-                    <span>Current Password [현재 비밀번호]</span>
-                    <input
-                      class="username"
-                      id="id"
-                      type="text"
-                      placeholder="Enter Current Password"
-                      onchange="changeValue()"
-                    />
-                  </div>
-
-                  <div class="changepw_column">
-                    <span>New Password [새로운 비밀번호]</span>
-                    <input
-                      class="username"
-                      id="id"
-                      type="text"
-                      placeholder="Enter New Password"
-                      onchange="changeValue()"
-                    />
-                  </div>
-
-                  <div class="changepw_column">
-                    <span>Confirm Password [비밀번호 확인]</span>
-                    <input
-                      class="username"
-                      id="id"
-                      type="text"
-                      placeholder="Enter New Password"
-                      onchange="changeValue()"
-                    />
-                  </div>
-                </div>
-
-                <div class="changepw_row_wrapper">
-                    <button type="submit" class="changepw_button" onclick="goLogin()">
-                        CHANGE
-                     </button>
-                     <button type="submit" class="changepw_button" onclick="goLogin()">
-                        CLEAR
-                      </button>
-                </div>
-              </div>
+          <div class="fer_body_wrapper">
+            <div class="fer_row_wrapper">
+              <table class="styled-table">
+                <thead>
+                  <tr>
+                    <th>SN</th>
+                    <th>GUID</th>
+                    <th>USD AMOUNT</th>
+                    <th>KRW AMOUNT</th>
+                    <th>EX-RATE</th>
+                    <th>CREATE BY</th>
+                    <th>CREATED DATE</th>
+                    <th>STATUS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>1.02%</td>
+                    <td>GME</td>
+                    <td>2023.04.25</td>
+                    <td>PROGRESS</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

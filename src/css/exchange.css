@@ -1,4 +1,4 @@
-.deposit_wrapper {
+.exchange_wrapper {
   position: relative;
   background-position: center;
   display: flex;
@@ -10,17 +10,17 @@
   margin-right: 200px;
   margin-bottom: 100px;
 }
-.deposit_content {
+.exchange_content {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-.deposit_head_wrapper {
+.exchange_head_wrapper {
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
 }
-.deposit_head {
+.exchange_head {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -31,17 +31,20 @@
   justify-content: center;
   align-items: center;
 }
-.deposit_title {
+.exchange_title {
   color: #fff;
   font-size: 30px;
 }
-.deposit_body_wrapper {
-  min-height: 400px;
+.exchange_content1_head_title {
+  color: #fff;
+  font-size: 20px;
+}
+.exchange_body_wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.deposit_column_wrapper {
+.exchange_column_wrapper {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -49,7 +52,7 @@
 }
 
 @media (min-width: 992px) {
-  .deposit_column {
+  .exchange_column {
     width: 100%;
     max-width: 50%;
     padding: 10px;
@@ -57,7 +60,7 @@
 }
 
 @media (min-width: 992px) {
-  .deposit_result {
+  .exchange_result {
     padding-left: 20px;
   }
 }
@@ -103,32 +106,55 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   display: flex;
 }
-.deposit_row_box_wrapper {
-  display: flex;
-  flex-direction: row;
+.input_profile {
   width: 100%;
-}
-.deposit_button_wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  padding-right: 50px;
-}
-
-@media (min-width: 992px) {
-  .deposit_button_wrapper {
-    width: 100%;
-    max-width: 50%;
-    padding: 15px;
-  }
-}
-
-.deposit_button {
+  border: 2px solid #ccc;
+  font-size: 15px !important;
+  color: #ed1c24;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  line-height: 2;
+  background-color: #fff;
+  background-image: none;
   border-radius: 10px;
-  width: 50%;
-  height: 50px;
-  margin: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  height: 40px;
+  /* transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; */
+}
+.input_content {
+  width: 100%;
+  border: 2px solid #ccc;
+  font-size: 15px !important;
+  color: #ed1c24;
+  padding: 10px;
+  margin: 0 0 0 0;
+  line-height: 2;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  display: block;
+  height: 40px;
+  /* transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; */
+}
+.exchange_row_box_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.exchange_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+.exchange_button {
+  border-radius: 10px;
+  width: 30%;
+  height: 50%;
+  margin: 30px;
   font-size: 20px;
   cursor: pointer;
   color: #fff;
@@ -137,7 +163,7 @@
   border-width: 1px;
   border-style: solid;
 }
-.deposit_row_wrapper {
+.exchange_row_wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -171,4 +197,39 @@
 
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid red;
+}
+.exchange_content1_wrapper {
+  position: relative;
+  background-position: center;
+  display: flex;
+  z-index: 1;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 30px 10px 10px 10px;
+}
+.exchange_content1_head_wrapper {
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.exchange_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+.exchange_button {
+  border-radius: 10px;
+  width: 30%;
+  height: 30%;
+  margin: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ef343b;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
 }

@@ -42,26 +42,17 @@
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="/Pages/ExchangeFund/GridList.aspx"
-                      >
+                      <a class="gme_anchor" href="../fund/eflist.html">
                         Exchange Fund History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="/Pages/ExchangeFund/List.aspx"
-                      >
+                      <a class="gme_anchor" href="../fund/excahnge.html">
                         Exchange Fund
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="/Pages/VASettlement/Report.aspx"
-                      >
+                      <a class="gme_anchor" href="../fund/statement.html">
                         Statement
                       </a>
                     </li>
@@ -165,10 +156,10 @@
                 <div class="deposit_column">
                   <select class="filter">
                     <option value="hi" selected="selected">
-                      <text>Filter Results</text>
+                      <text>Filter Results1</text>
                     </option>
                     <option value="hi" selected="selected">
-                      <text>Filter Results</text>
+                      <text>Filter Results2</text>
                     </option>
                   </select>
                 </div>
@@ -195,32 +186,113 @@
                       onchange="changeValue()"
                     />
                   </div>
-                </div>
-              </div>
 
-              <div class="deposit_button_wrapper">
-                <button
-                  type="submit"
-                  class="deposit_button"
-                  onclick="goLogin()"
-                >
-                  FILTER
-                </button>
-                <button
-                  type="submit"
-                  class="deposit_button"
-                  onclick="goLogin()"
-                >
-                  CLEAR
-                </button>
+                  <div class="deposit_button_wrapper">
+                    <button
+                      type="submit"
+                      class="deposit_button"
+                      onclick="goLogin()"
+                    >
+                      FILTER
+                    </button>
+                    <button
+                      type="submit"
+                      class="deposit_button"
+                      onclick="goLogin()"
+                    >
+                      CLEAR
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="deposit_row_wrapper">
-              <div class="deposit_column">
-                <text>Result : 0 </text>
-                <text>Records </text>
+              <div class="deposit_result">
+                <text>Result :</text>
+                <text> 0 Records </text>
               </div>
+              <div class="deposit_result">
+                <select class="page">
+                  <option value="hi" selected="selected">
+                    <text>hi</text>
+                  </option>
+                  <option value="hi" selected="selected">
+                    <text>jo</text>
+                  </option>
+                </select>
+              </div>
+              <div class="deposit_result">
+                <text> per page </text>
+              </div>
+              <div class="deposit_result">
+                <select class="page">
+                  <option value="hi" selected="selected">
+                    <text>hi</text>
+                  </option>
+                  <option value="hi" selected="selected">
+                    <text>jo</text>
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="deposit_row_wrapper">
+              <table class="styled-table">
+                <thead>
+                  <tr>
+                    <th>SN</th>
+                    <th>GUID</th>
+                    <th>TRANSACTION DATE</th>
+                    <th>TRANSACTION AMOUNT</th>
+                    <th>TRANSACTION CURRENCY</th>
+                    <th>CREATED DATE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>2023.04.20</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>2023.04.25</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>2023.04.20</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>2023.04.25</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>2023.04.20</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>2023.04.25</td>
+                  </tr>
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>2023.04.20</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>2023.04.25</td>
+                  </tr>
+
+                  <tr>
+                    <td>10000001</td>
+                    <td>10000001</td>
+                    <td>2023.04.20</td>
+                    <td>1,000,000</td>
+                    <td>1,000,000</td>
+                    <td>2023.04.25</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

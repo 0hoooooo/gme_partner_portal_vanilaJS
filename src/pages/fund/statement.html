@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../src/css/header.css" />
     <link rel="stylesheet" href="../../../src/css/style.css" />
-    <link rel="stylesheet" href="../../../src/css/chagepw.css" />
+    <link rel="stylesheet" href="../../../src/css/statement.css" />
     <title>GME Korea Agent Portal</title>
     <script src="../../../include.js" defer></script>
   </head>
@@ -32,42 +32,27 @@
                   </a>
                   <ul class="dropDownMenu">
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/balance.html"
-                      >
+                      <a class="gme_anchor" href="../fund/balance.html">
                         Balance History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/deposit.html"
-                      >
+                      <a class="gme_anchor" href="../fund/deposit.html">
                         Deposit History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/eflist.html"
-                      >
+                      <a class="gme_anchor" href="../fund/eflist.html">
                         Exchange Fund History
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/excahnge.html"
-                      >
+                      <a class="gme_anchor" href="../fund/excahnge.html">
                         Exchange Fund
                       </a>
                     </li>
                     <li>
-                      <a
-                        class="gme_anchor"
-                        href="../fund/statement.html"
-                      >
+                      <a class="gme_anchor" href="../fund/statement.html">
                         Statement
                       </a>
                     </li>
@@ -139,7 +124,9 @@
               </a>
               <ul class="right_dropDownMenu">
                 <li>
-                  <a class="gme_anchor" href="../mypage/profile.html"> Profile </a>
+                  <a class="gme_anchor" href="../mypage/profile.html">
+                    Profile
+                  </a>
                 </li>
                 <li>
                   <a class="gme_anchor" href="../auth/login.html"> Sign Out </a>
@@ -154,61 +141,64 @@
           </ul>
         </div>
       </nav>
-      <div class="chagepw_wrapper">
-        <div class="chagepw_content">
-          <div class="changepw_head_wrapper">
-            <div class="changepw_head">
-              <span class="changepw_title">Change Password</span>
+
+      <div class="statement_wrapper">
+        <div class="statement_content">
+          <div class="statement_head_wrapper">
+            <div class="statement_head">
+              <span class="statement_title">VASettlement Report</span>
             </div>
           </div>
 
-          <div class="changepw_body_wrapper">
-
-            <div class="changepw_column_wrapper">
-
-              <div class="changepw_rows_wrapper">
-
-                  <div class="changepw_column">
-                    <span>Current Password [현재 비밀번호]</span>
+          <div class="statement_body_wrapper">
+            <div class="statement_row_box_wrapper">
+              <div class="statement_column_wrapper">
+                <div class="statement_row_box_wrapper">
+                  <div class="statement_column">
+                    <span>Search from</span>
                     <input
-                      class="username"
+                      class="date"
                       id="id"
-                      type="text"
-                      placeholder="Enter Current Password"
+                      type="date"
+                      placeholder="GUID"
                       onchange="changeValue()"
                     />
                   </div>
 
-                  <div class="changepw_column">
-                    <span>New Password [새로운 비밀번호]</span>
+                  <div class="statement_column">
+                    <span>Search To</span>
                     <input
-                      class="username"
+                      class="date"
                       id="id"
-                      type="text"
-                      placeholder="Enter New Password"
-                      onchange="changeValue()"
-                    />
-                  </div>
-
-                  <div class="changepw_column">
-                    <span>Confirm Password [비밀번호 확인]</span>
-                    <input
-                      class="username"
-                      id="id"
-                      type="text"
-                      placeholder="Enter New Password"
+                      type="date"
+                      placeholder="GUID"
                       onchange="changeValue()"
                     />
                   </div>
                 </div>
+                <div class="statement_row_box_wrapper">
+                  <div class="statement_column">
+                    <span>Business Model</span>
+                    <select class="username">
+                      <option value="hi" selected="selected">
+                        <text>1</text>
+                      </option>
+                      <option value="hi" selected="selected">
+                        <text>2</text>
+                      </option>
+                    </select>
+                  </div>
+                </div>
 
-                <div class="changepw_row_wrapper">
-                    <button type="submit" class="changepw_button" onclick="goLogin()">
-                        CHANGE
-                     </button>
-                     <button type="submit" class="changepw_button" onclick="goLogin()">
-                        CLEAR
-                      </button>
+                <div class="statement_button_wrapper">
+                  <button
+                    type="submit"
+                    class="statement_button"
+                    style="position: relative"
+                    onclick="goLogin()"
+                  >
+                    FILTER
+                  </button>
                 </div>
               </div>
             </div>
