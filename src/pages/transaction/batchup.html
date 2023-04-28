@@ -11,7 +11,7 @@
     <script src="../../../include.js" defer></script>
   </head>
   <body>
-        s<div class="main_wrapper">
+        <div class="main_wrapper">
           <nav class="header_wrapper">
             <div class="header_container">
               <div class="menuui_left">
@@ -76,7 +76,7 @@
                         <li>
                           <a
                             class="gme_anchor"
-                            href="/Pages/TransactionDetail/List.aspx"
+                            href="../transaction/batchup.html"
                           >
                             Transaction Detail
                           </a>
@@ -197,10 +197,8 @@
                         </div>
 
                         <div class="batchup_column_wrapper">
-                          <text style="padding-bottom: 20px"
-                            >BatchFile Sample</text
-                          >
-                          <input type="text" disabled />
+                          <text style="padding-bottom: 20px">BatchFile Sample</text>
+                          <input type="text"  disabled/>
                         </div>
                       </div>
                     </div>
@@ -446,8 +444,14 @@
                   </option>
                 </select>
               </div>
+              <!-- <div class="batchup_result" style="padding-left: 600px;"> -->
+                <button class="left_arrow"/>
+                <button class="right_arrow"></button>
+                  <input type="button" class="excel_button" value="Excel" onclick="download()" />
+              
+              <!-- </div> -->
             </div>
-
+            
             <div class="batchup_row_wrapper">
               <table class="styled-table">
                 <thead>

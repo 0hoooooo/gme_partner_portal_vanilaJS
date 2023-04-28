@@ -42,6 +42,9 @@ table {
   font-size: 10px;
   vertical-align: baseline;
 } */
+select {
+  cursor: pointer;
+}
 label {
   margin: 0;
   padding: 0;
