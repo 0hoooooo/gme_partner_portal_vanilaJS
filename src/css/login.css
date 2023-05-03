@@ -70,7 +70,7 @@
   padding: 10px 10px;
   font-size: 20px;
   cursor: pointer;
-  color: #ef343b;
+  color: red;
   background-color: #fff;
   text-decoration: none;
   border-width: 1px;
@@ -78,7 +78,7 @@
 }
 .login_button:hover {
   color: #fff;
-  background-color: #ef343b;
+  background-color: red;
 }
 .inputId_wrapper {
   border-radius: 5px;

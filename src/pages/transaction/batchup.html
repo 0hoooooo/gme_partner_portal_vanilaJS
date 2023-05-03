@@ -109,7 +109,7 @@
                         <li>
                           <a
                             class="gme_anchor"
-                            href="/Pages/VASettlement/List.aspx"
+                            href="../virtual/settlement.html"
                           >
                             Settlement
                           </a>
@@ -162,7 +162,9 @@
               <div class="tab_inner active">
 
                 <div class="batchup_content1_wrapper">
+
                   <div class="batchup_content">
+
                     <div class="batchup_content1_head_wrapper">
                       <div class="batchup_head">
                         <span class="batchup_content1_head_title"
@@ -173,9 +175,9 @@
 
                     <div class="batchup_body_wrapper">
                       <div class="batchup_column_wrapper">
-                        <div class="batchup_row_wrapper">
-                          <text style="padding-right: 20px">Upload Batch</text>
+                        <div class="batchup_head_row_wrapper">
                           <div class="file_upload_wrapper">
+                            <text style="padding-right: 20px">Upload Batch</text>
                             <input type="file" name="file" id="file" />
                           </div>
                           <div class="batch_button_wrapper">
@@ -202,316 +204,327 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
-                </div>
-                
+
+                </div> 
+
               </div>
 
-                <div class="tab_inner">
+              <div class="tab_inner">
                  <div class="batchup_content1_wrapper">
-                  <div class="batchup_content">
-                    <div class="batchup_content1_head_wrapper">
-                      <div class="batchup_head">
-                        <span class="batchup_content1_head_title"
-                          >READY STATE DATA</span
-                        >
+                    <div class="batchup_content">
+                      <div class="batchup_content1_head_wrapper">
+                        <div class="batchup_head">
+                          <span class="batchup_content1_head_title"
+                            >READY STATE DATA</span
+                          >
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="batchup_body_wrapper">
-                      <div class="batchup_column_wrapper">
-                        <div class="batchup_row_wrapper">
-                          <text style="padding-right: 50px">TOTAL AMOUNT</text>
-                          
-                          <div class="batch_button_wrapper">
-                            <input
-                            class="username"
-                            id="id"
-                            type="text"
-                            placeholder="0.00"
-                            onchange="changeValue()"
-                          />
+                      <div class="batchup_body_wrapper">
+                        <div class="batchup_column_wrapper">
+                          <div class="batchup_row_wrapper">
+                            <div class="title_wrapper">
+                              <text style="padding-right: 50px">TOTAL AMOUNT</text>
+                            </div>
+                            <div class="batch_button_wrapper">
+                              <input
+                              class="username"
+                              id="id"
+                              type="text"
+                              placeholder="0.00"
+                              onchange="changeValue()"
+                            />
+                            </div>
+                          </div>
+                        
+                          <div class="batchup_column_wrapper">
+                            <table class="styled-table">
+                              <thead>
+                                <tr>
+                                  <th><input type="checkbox"></th>
+                                  <th>SN</th>
+                                  <th>REFERENCE ID</th>
+                                  <th>MEMBER ID</th>
+                                  <th>TYPE CODE</th>
+                                  <th>TARGET CURRENCY</th>
+                                  <th>SETTLEMENT AMOUNT</th>
+                                  <th>BANK NAME</th>
+                                  <th>ACCOUNT NUMBER</th>
+                                  <th>PAYOUT REASON</th>
+                                  <th>STATUS</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                                <tr>
+                                  <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
+                                  <td>10000001</td>
+                                  <td>10000001</td>
+                                  <td>ADMIN</td>
+                                  <td>1000001</td>
+                                  <td>1,000,000</td>
+                                  <td>1,000,000</td>
+                                  <td>GME</td>
+                                  <td>1</td>
+                                  <td>LOAN</td>
+                                  <td>PROGRESS</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="batchup_button_wrapper">
+                              <button
+                                type="submit"
+                                class="batchup_button"
+                                style="position: relative"
+                                onclick="goLogin()"
+                              >
+                                PROCESS TXN
+                              </button>
+                            </div>
                           </div>
                         </div>
-
-                        <div class="batchup_column_wrapper">
-                            <table class="styled-table">
-                                <thead>
-                                  <tr>
-                                    <th><input type="checkbox"></th>
-                                    <th>SN</th>
-                                    <th>REFERENCE ID</th>
-                                    <th>MEMBER ID</th>
-                                    <th>TYPE CODE</th>
-                                    <th>TARGET CURRENCY</th>
-                                    <th>SETTLEMENT AMOUNT</th>
-                                    <th>BANK NAME</th>
-                                    <th>ACCOUNT NUMBER</th>
-                                    <th>PAYOUT REASON</th>
-                                    <th>STATUS</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-                                  <tr>
-                                    <td><input type="checkbox" name="_selected_" value="ROW_1"></td>
-                                    <td>10000001</td>
-                                    <td>10000001</td>
-                                    <td>ADMIN</td>
-                                    <td>1000001</td>
-                                    <td>1,000,000</td>
-                                    <td>1,000,000</td>
-                                    <td>GME</td>
-                                    <td>1</td>
-                                    <td>LOAN</td>
-                                    <td>PROGRESS</td>
-                                  </tr>
-
-                                </tbody>
-                              </table>
-                              <div class="batchup_button_wrapper">
-                                <button
-                                  type="submit"
-                                  class="batchup_button"
-                                  style="position: relative"
-                                  onclick="goLogin()"
-                                >
-                                  PROCESS TXN
-                                </button>
-                              </div>
-                        </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
-            <div class="tab_inner"><div class="batchup_content1_wrapper">
-              <div class="batchup_content">
-                <div class="batchup_content1_head_wrapper">
-                  <div class="batchup_head">
-                    <span class="batchup_content1_head_title"
-                      >SETTLEMENT TRANSACTION</span
-                    >
-                  </div>
-                </div>
-
-            <div class="batchup_body_wrapper">
-              <div class="batchup_row_box_wrapper">
-                <div class="batchup_column_wrapper">
-                  <div class="batchup_column">
-                    <select class="filter">
-                      <option value="hi" selected="selected">
-                        <text>Filter Results1</text>
-                      </option>
-                      <option value="hi" selected="selected">
-                        <text>Filter Results2</text>
-                      </option>
-                    </select>
-                  </div>
-                
-                  <div class="batchup_row_box_wrapper">
-                    <div class="batchup_column">
-                      <span>From Date</span>
-                      <input
-                        class="date"
-                        id="id"
-                        type="date"
-                        placeholder="GUID"
-                        onchange="changeValue()"
-                      />
-                    </div>
-                  
-                    <div class="batchup_column">
-                      <span>To Date</span>
-                      <input
-                        class="date"
-                        id="id"
-                        type="date"
-                        placeholder="GUID"
-                        onchange="changeValue()"
-                      />
-                    </div>
-                  
-                    <div class="batchup_button_wrapper">
-                      <button
-                        type="submit"
-                        class="batchup_button"
-                        onclick="goLogin()"
+            <div class="tab_inner">
+              <div class="batchup_content1_wrapper">
+                <div class="batchup_content">
+                  <div class="batchup_content1_head_wrapper">
+                    <div class="batchup_head">
+                      <span class="batchup_content1_head_title"
+                        >SETTLEMENT TRANSACTION</span
                       >
-                        FILTER
-                      </button>
-                      <button
-                        type="submit"
-                        class="batchup_button"
-                        onclick="goLogin()"
-                      >
-                        CLEAR
-                      </button>
                     </div>
                   </div>
-                </div>
-              </div>
 
-            <div class="batchup_row_wrapper">
-              <div class="batchup_result">
-                <text>Result :</text>
-                <text> 0 Records </text>
-              </div>
-              <div class="batchup_result">
-                <select class="page">
-                  <option value="hi" selected="selected">
-                    <text>hi</text>
-                  </option>
-                  <option value="hi" selected="selected">
-                    <text>jo</text>
-                  </option>
-                </select>
-              </div>
-              <div class="batchup_result">
-                <text> per page </text>
-              </div>
-              <div class="batchup_result">
-                <select class="page">
-                  <option value="hi" selected="selected">
-                    <text>hi</text>
-                  </option>
-                  <option value="hi" selected="selected">
-                    <text>jo</text>
-                  </option>
-                </select>
-              </div>
-              <!-- <div class="batchup_result" style="padding-left: 600px;"> -->
-                <button class="left_arrow"/>
-                <button class="right_arrow"></button>
-                  <input type="button" class="excel_button" value="Excel" onclick="download()" />
-              
-              <!-- </div> -->
-            </div>
+                  <div class="batchup_body_wrapper">
+                      <div class="batchup_row_box_wrapper">
+                          <div class="batchup_column_wrapper">
+
+                                <div class="batchup_column">
+                                  <select class="filter">
+                                    <option value="hi" selected="selected">
+                                      <text>Filter Results1</text>
+                                    </option>
+                                    <option value="hi" selected="selected">
+                                      <text>Filter Results2</text>
+                                    </option>
+                                  </select>
+                                </div>
+                              
+                                <div class="batchup_row_box_wrapper">
+                                    <div class="batchup_column">
+                                      <span>From Date</span>
+                                      <input
+                                        class="date"
+                                        id="id"
+                                        type="date"
+                                        placeholder="GUID"
+                                        onchange="changeValue()"
+                                      />
+                                    </div>
+                                  
+                                    <div class="batchup_column">
+                                      <span>To Date</span>
+                                      <input
+                                        class="date"
+                                        id="id"
+                                        type="date"
+                                        placeholder="GUID"
+                                        onchange="changeValue()"
+                                      />
+                                    </div>
+                                  
+                                    <div class="batchup_button_wrapper">
+                                      <button
+                                        type="submit"
+                                        class="batchup_button"
+                                        onclick="goLogin()"
+                                      >
+                                        FILTER
+                                      </button>
+                                      <button
+                                        type="submit"
+                                        class="batchup_button"
+                                        onclick="goLogin()"
+                                      >
+                                        CLEAR
+                                      </button>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+
+                      <div class="result_row_wrapper">
+
+                        <div class="batchup_filter_wrapper">
+                          
+                          <div class="batchup_result">
+                            <text>Result :</text>
+                            <text> 0 Records </text>
+                          </div>
+  
+                          <div class="batchup_result">
+                            <select class="page">
+                              <option value="hi" selected="selected">
+                                <text>hi</text>
+                              </option>
+                              <option value="hi" selected="selected">
+                                <text>jo</text>
+                              </option>
+                            </select>
+                          </div>
+  
+                          <div class="batchup_result">
+                            <text> per page </text>
+                          </div>
+                          <div class="batchup_result">
+                            <select class="page">
+                              <option value="hi" selected="selected">
+                                <text>hi</text>
+                              </option>
+                              <option value="hi" selected="selected">
+                                <text>jo</text>
+                              </option>
+                            </select>
+                          </div>  
+                        </div>
+                        
+
+                        <div class="button_wrapper">
+                          <button class="left_arrow"/>
+                          <button class="right_arrow"></button>
+                            <input type="button" class="excel_button" value="Excel" onclick="download()" />
+                        </div>                        
+                        
+                      </div>
             
-            <div class="batchup_row_wrapper">
-              <table class="styled-table">
-                <thead>
-                  <tr>
-                    <th>SN</th>
-                    <th>GUID</th>
-                    <th>TRANSACTION DATE</th>
-                    <th>TRANSACTION AMOUNT</th>
-                    <th>TRANSACTION CURRENCY</th>
-                    <th>CREATED DATE</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>10000001</td>
-                    <td>10000001</td>
-                    <td>2023.04.20</td>
-                    <td>1,000,000</td>
-                    <td>1,000,000</td>
-                    <td>2023.04.25</td>
-                  </tr>
-                  <tr>
-                    <td>10000001</td>
-                    <td>10000001</td>
-                    <td>2023.04.20</td>
-                    <td>1,000,000</td>
-                    <td>1,000,000</td>
-                    <td>2023.04.25</td>
-                  </tr>
-                  <tr>
-                    <td>10000001</td>
-                    <td>10000001</td>
-                    <td>2023.04.20</td>
-                    <td>1,000,000</td>
-                    <td>1,000,000</td>
-                    <td>2023.04.25</td>
-                  </tr>
-                  <tr>
-                    <td>10000001</td>
-                    <td>10000001</td>
-                    <td>2023.04.20</td>
-                    <td>1,000,000</td>
-                    <td>1,000,000</td>
-                    <td>2023.04.25</td>
-                  </tr>
-
-                  <tr>
-                    <td>10000001</td>
-                    <td>10000001</td>
-                    <td>2023.04.20</td>
-                    <td>1,000,000</td>
-                    <td>1,000,000</td>
-                    <td>2023.04.25</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+                  <div class="batchup_table_wrapper">
+                    <table class="styled-table">
+                      <thead>
+                        <tr>
+                          <th>SN</th>
+                          <th>GUID</th>
+                          <th>TRANSACTION DATE</th>
+                          <th>TRANSACTION AMOUNT</th>
+                          <th>TRANSACTION CURRENCY</th>
+                          <th>CREATED DATE</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>10000001</td>
+                          <td>10000001</td>
+                          <td>2023.04.20</td>
+                          <td>1,000,000</td>
+                          <td>1,000,000</td>
+                          <td>2023.04.25</td>
+                        </tr>
+                        <tr>
+                          <td>10000001</td>
+                          <td>10000001</td>
+                          <td>2023.04.20</td>
+                          <td>1,000,000</td>
+                          <td>1,000,000</td>
+                          <td>2023.04.25</td>
+                        </tr>
+                        <tr>
+                          <td>10000001</td>
+                          <td>10000001</td>
+                          <td>2023.04.20</td>
+                          <td>1,000,000</td>
+                          <td>1,000,000</td>
+                          <td>2023.04.25</td>
+                        </tr>
+                        <tr>
+                          <td>10000001</td>
+                          <td>10000001</td>
+                          <td>2023.04.20</td>
+                          <td>1,000,000</td>
+                          <td>1,000,000</td>
+                          <td>2023.04.25</td>
+                        </tr>
+                      
+                        <tr>
+                          <td>10000001</td>
+                          <td>10000001</td>
+                          <td>2023.04.20</td>
+                          <td>1,000,000</td>
+                          <td>1,000,000</td>
+                          <td>2023.04.25</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
