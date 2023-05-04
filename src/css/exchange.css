@@ -5,8 +5,8 @@
   z-index: 1;
   color: black;
   border: 2px solid red;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 50px 200px;
+  border-radius: 20px;
 }
 .exchange_content {
   width: 100%;
@@ -23,6 +23,8 @@
   width: 100%;
   min-height: 50px;
   background-color: red;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;

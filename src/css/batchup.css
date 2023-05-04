@@ -65,7 +65,7 @@ li {
 }
 
 .tab_menu {
-  margin: 20px 100px 20px 100px;
+  margin: 50px;
 }
 
 .tab {
@@ -166,8 +166,10 @@ li {
 }
 .batchup_table_wrapper {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 10px 0px 0px 30px;
+  min-height: 1px;
+  padding: 20px 20px 20px 20px;
 }
 @media (min-width: 992px) {
   .batchup_result {
