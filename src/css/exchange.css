@@ -14,7 +14,7 @@
   margin-left: auto;
 }
 .exchange_head_wrapper {
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -141,26 +141,7 @@
   flex-direction: row;
   width: 100%;
 }
-.exchange_button_wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 20%;
-  justify-content: center;
-}
-.exchange_button {
-  border-radius: 10px;
-  width: 30%;
-  height: 50%;
-  margin: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #fff;
-  background-color: red;
-  text-decoration: none;
-  border-width: 1px;
-  border-style: solid;
-}
+
 .exchange_row_wrapper {
   display: flex;
   flex-direction: row;
@@ -230,7 +211,9 @@
   border-width: 1px;
   border-style: solid;
 }
-
+.exchange_button:hover {
+  background-color: #e94046 !important;
+}
 #wrapper {
   margin: 10px;
   margin-top: 30px;

@@ -14,7 +14,7 @@
   margin-left: auto;
 }
 .settlement_head_wrapper {
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -31,20 +31,13 @@
 }
 .settlement_title {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
 }
 .settlement_body_wrapper {
   min-height: 300px;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-}
-
-.settlement_column_wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding: 30px;
 }
 
 @media (min-width: 992px) {
@@ -156,7 +149,7 @@
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
-  margin-left: 500px;
+  margin-left: auto;
 }
 .left_arrow:hover {
   background-color: red;
@@ -240,7 +233,6 @@
   font-family: sans-serif;
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin: 0px 20px 20px 0px;
 }
 .styled-table thead tr {
   background-color: red;
@@ -269,7 +261,6 @@
 .amount_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   padding: 10px 0px 20px 40px;
 }
@@ -297,6 +288,9 @@
   height: 40px;
   margin: -10px 0px 0px 10px;
 }
+.table-responsive {
+  overflow-x: auto;
+}
 .settlement_column_wrapper {
   display: flex;
   flex-direction: column;
@@ -314,7 +308,7 @@
 }
 .settlement_collected_wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   padding: 20px 20px 20px 0px;
 }

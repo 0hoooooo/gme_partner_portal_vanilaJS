@@ -149,21 +149,7 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   display: flex;
 }
-.left_arrow {
-  border: 1px solid red;
-  background-color: white;
-  border-radius: 10px;
-  width: 30px;
-  background-image: url("../images/left.png");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: center;
-  margin-left: 500px;
-}
-.left_arrow:hover {
-  background-color: red;
-  color: white;
-}
+
 .right_arrow {
   border: 1px solid red;
   background-color: white;
@@ -248,7 +234,6 @@
   font-family: sans-serif;
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin: 0px 20px 20px 0px;
 }
 .styled-table thead tr {
   background-color: red;
@@ -259,6 +244,7 @@
 .styled-table td {
   padding: 15px 15px;
   text-align: center;
+  width: 150px;
 }
 .styled-table tbody tr {
   border-bottom: 1px solid #dddddd;
@@ -372,35 +358,10 @@
   width: 100%;
   padding: 20px;
 }
-.styled-table {
-  border-collapse: collapse;
-  font-size: 15px;
-  font-family: sans-serif;
-  width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin: 0 20px 20px 0;
-}
-.styled-table thead tr {
-  background-color: red;
-  color: #ffffff;
-  text-align: center;
-}
-.styled-table th,
-.styled-table td {
-  padding: 10px 10px;
-  text-align: center;
-}
-.styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+.table-responsive {
+  overflow-x: auto;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid red;
-}
 li {
   list-style: none;
   cursor: pointer;
@@ -475,7 +436,7 @@ li {
 }
 .management_content1_head_title {
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
 }
 .management_body_wrapper {
   display: flex;
@@ -632,7 +593,7 @@ input[type="file"]::file-selector-button:hover {
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center;
-  margin-left: 500px;
+  margin-left: auto;
 }
 .left_arrow:hover {
   background-color: red;

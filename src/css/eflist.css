@@ -14,7 +14,7 @@
   margin-left: auto;
 }
 .fer_head_wrapper {
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -132,6 +132,7 @@
   flex-direction: row;
   width: 100%;
   padding: 50px 20px 20px 20px;
+  overflow-x: auto;
 }
 .styled-table {
   border-collapse: collapse;
