@@ -119,7 +119,14 @@
   display: none;
 }
 .caret {
-  display: none;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  vertical-align: middle;
+  border-top: 10px dashed;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }
 .gme_anchor {
   display: block;
@@ -215,8 +222,8 @@
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 10px;
-  vertical-align: middle;
+  margin-left: 0px;
+  vertical-align: auto;
   border-top: 10px dashed;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;

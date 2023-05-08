@@ -44,6 +44,7 @@ if (loginInfo != null) {
 } else {
   document.getElementById("agentName").innerText =
     "저장된 아이디 값이 없습니다.";
+  document.getElementById("login").display = none;
   document.getElementById("btn").disabled = true; //값 없는 경우 삭제 버튼 비활성
 }
 function logOut() {
